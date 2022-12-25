@@ -29,7 +29,11 @@ h1 {
 }
 
 .entrada-blog a {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 120px;
     background-color: #2196F3;
     color: white;
     padding: 10px 20px;
@@ -39,3 +43,12 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+
+@media (min-width: 768px) {
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
